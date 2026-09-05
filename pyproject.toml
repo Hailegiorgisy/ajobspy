@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.18.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ajobspy"
+version = "0.1.0"
+description = "A comprehensive multi-regional and social job scraping framework across Africa"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Hailegiorgis Yirgu" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+]
+dependencies = [
+    "pydantic>=2.0.0",
+    "pandas>=2.0.0",
+    "requests>=2.28.0",
+    "beautifulsoup4>=4.11.0",
+    "telethon>=1.30.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/africajobspy"
