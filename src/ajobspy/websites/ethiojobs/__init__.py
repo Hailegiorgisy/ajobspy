@@ -89,6 +89,8 @@ def scrape_ethiojobs(
             
             page += 1
 
+        except (TimeoutError, requests.exceptions.Timeout):
+            raise
         except Exception as e:
             print(f"Error scraping EthioJobs via Next.js payload: {e}")
             break
